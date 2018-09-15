@@ -1,0 +1,24 @@
+<div class="content">
+  <div class="frmStart">
+    <div class="frmSignupLogin">
+        <h1>{head.title}</h1>
+        <h2>{head.description}</h2>
+        <h2 id="orderAmount">Amount:</h2>
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>        <form id="ordersCreate" action="/api/orders" method="POST">
+          <div class="formError"></div>
+          <div class="inputLabel">Credit card number</div>
+          <input class="inputWrapper" type="text" name="cardNumber" placeholder="4242424242424242" pattern="[0-9]{16}$" required/>
+          <div class="inputLabel">Exp month</div>
+          <input class="inputWrapper" type="text" name="expMonth" placeholder="01" pattern="[0-9]{2}$" required />
+          <div class="inputLabel">Exp year</div>
+          <input class="inputWrapper" type="text" name="expYear" placeholder="2019" pattern="[0-9]{4}$" required />
+          <div class="inputLabel">CVC</div>
+          <input class="inputWrapper" type="text" name="cvc" placeholder="123" pattern="[0-9]{3}$" required />
+          <div class="buttonLogin">
+            <button class="buttonWrapper" type="submit" id="payButton">Pay</button>
+            <a class="buttonWrapper" href="orders/all">Cancel</a>
+          </div>
+        </form>  
+  </div> 
+</div>
+</div>

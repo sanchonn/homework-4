@@ -1,0 +1,27 @@
+<div class="loginLayout">
+  <div class="formLogin">
+    <h1>{head.title}</h1>
+      <div id="accountEdit">
+        <div class="formError"></div>
+        <div class="inputLabel">Your email</div>
+        <input id="accountEditEmail" class="inputWrapper" type="email" name="email" readonly/>
+        <div class="inputLabel">Type your name</div>
+        <input id="accountEditName" class="inputWrapper" type="text" name="name" placeholder="Name"/>
+        <div class="inputLabel">Type your address to delivery service</div>
+        <input id="accountEditAddress" class="inputWrapper" type="text" name="address" placeholder="Address"/>
+        <div class="inputLabel">Type your password to account</div>
+        <input id="accountEditPassword" class="inputWrapper" type="password" name="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.passwordRepeat.pattern = this.value;" placeholder="Password"/>
+        <div class="inputLabel">Repeat your password to account</div>
+        <input id="accountEditPasswordRepeat" class="inputWrapper" type="password" name="passwordRepeat" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password"/>
+        <div class="inputLabel">
+            <input type="checkbox" id="deleteAccountChkbox" name="deleteAccount" value="false">
+            <label for="deleteAccountButton">Mark if you want to delete account</label>    
+        </div>
+        <div class="buttonLogin">
+          <button id="accountEditUpdate" href="#" class="buttonWrapper">Update</button>
+          <a id="accountEditDelete" href="#" class="buttonWrapper">Delete Account</a>
+          <a href="/" class="buttonWrapper">Cancel</a>
+        </div>
+      </div>
+  </div>
+</div>

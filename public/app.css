@@ -1,0 +1,532 @@
+/*
+* CSS Style for Application
+*
+*/
+
+/* Roboto fonts */
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../public/fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../public/fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../public/fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../public/fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../public/fonts/RobotoBold/RobotoBold.eot");
+  src: url("../public/fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../public/fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../public/fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+/* Define style for h1, h2 */
+h1 {
+  font-size: 20px;
+  font-family: Roboto-Medium;
+}
+
+h2 {
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: #757575;
+}
+
+/* header */
+.navBar ul li.loggedIn{
+  display: none;
+}
+
+body.loggedIn .navBar ul li.loggedIn{
+  display: inline-block;
+}
+
+body.loggedIn .navBar ul li.loggedOut{
+  display: none;
+}
+
+body {
+  background: #795548;
+  background-image: url(/public/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+}
+
+.logo img {
+  width: 150px;
+  margin: 10px;
+}
+/* Navbar */
+.navBar {
+  background: #5D4037;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12), 0 4px 4px 0 rgba(0, 0, 0, 0.24);
+}
+
+/*
+.active{
+  text-decoration: underline;
+  text-decoration-color: #FF5722;
+}
+*/
+
+.topMenu ul {
+  text-align: right;
+  padding: 25px 34px;
+}
+
+.topMenu ul li {
+  display: inline-block;
+}
+
+.topMenu ul li a {
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.topMenu ul li a:hover {
+  color: #FF5722;
+}
+
+/* Define workspace */
+.content {
+  min-height: 500px;
+  text-align: center;
+}
+
+/* standard form */
+.frmStart {
+  margin-top: 50px;
+  display: inline-block;
+  background: #D7CCC8;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.22), 0 24px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  max-width: 300px;
+}
+
+.frmSignupLogin {
+  padding: 20px;
+}
+
+/* style for buttons block */
+.buttonsBlock {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.buttonsBlock a {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  color: #212121;
+  background: #D7CCC8;
+  letter-spacing: 0.5px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px 0px;
+}
+
+.buttonsBlock a:hover {
+  color: #FF5722;
+}
+
+/* Status bar */
+.statusBar {
+  background: #D7CCC8;
+  border: 1px solid #979797;
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.statusBar h2 {
+  font-family: Roboto-Medium;
+  font-size: 16px;
+  color: #757575;
+  text-align: center;
+  padding: 5px;
+}
+
+
+/* Login Form
+*/
+
+.loginLayout {
+  text-align: center;
+}
+
+.formLogin {
+  width: 350px;
+  display: inline-block;
+  background: #D7CCC8;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.22), 0 24px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  text-align: left;
+}
+
+.formLogin h1 {
+  margin: 20px;
+}
+
+.formError {
+  margin-left: 20px;
+  color: red;
+}
+
+.inputWrapper {
+  margin-left: 20px;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: rgba(0,0,0,0.87);
+  text-align: left;
+  line-height: 24px;
+  width: 90%;
+}
+
+.inputLabel {
+  margin: 20px;
+  font-family: Roboto-Regular;
+  font-size: 16px;
+  color: rgba(0,0,0,0.87);
+  text-align: left;
+  color: #757575;
+}
+
+/* Button Login style */
+.buttonLogin {
+  text-align: right;
+}
+
+.buttonWrapper {
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  font-family: Roboto-Medium;
+  font-size: 14px;
+  color: #212121;
+  background: #D7CCC8;
+  letter-spacing: 0.5px;
+  text-align: center;
+  cursor: pointer;
+  margin: 20px 10px;
+}
+
+.buttonWrapper:hover {
+  color: #FF5722;
+}
+
+
+/* List of menu item */
+.menuListLayout {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.menuListLayout h1{
+  color: #FF5722;
+}
+
+.menuListLayout h2 {
+  color: white;
+}
+
+.menuItems {
+  width: 80%;
+  position: relative;  
+  margin: 10px auto;
+  display: block;
+}
+
+.itemWrapper {
+  width: 300px;
+  height: 300px;
+  display: block;
+  text-align: center;
+  float: left;
+  transition: width .2s;
+  background: #D7CCC8;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.22), 0 24px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  margin: 20px;
+}
+
+.itemTitle {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Roboto-Medium;
+}
+
+.itemDetail {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  color: #757575;
+  height: 40px;
+}
+
+.itemImage img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  transition: transform .4s ease-out;
+}
+
+.itemWrapper:hover .itemImage img {
+  transform: scale(1.05);
+}
+
+.itemPrice {
+  color: #FF5722;
+  font-size: 20px;
+}
+
+/* CartButton */
+.cartButtonWrapper {
+  margin-top: 10px;
+}
+
+.cartButton {
+  position: relative;
+  background-color: #FF5722;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #FF5722;
+}
+
+/* Show hidden when clocked on cartButton */
+.cartButton:active {
+  margin: 1px 1px 0;
+  box-shadow: 1px 1px 1px #000;
+}
+
+/* Number of items in the cart */
+.cartNumber {
+  background-color: #FF5722;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* Cart */
+.cartListLayout h1{
+  color: #FF5722;
+}
+
+.cartListLayout h2 {
+  color: white;
+}
+
+.cartImage img {
+  width: 50px;
+  height: 50px;
+}
+
+.cartItems {
+  width: 70%;
+  display: inline-block;
+  background: #D7CCC8;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.22), 0 24px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#cartListTable {
+  margin: 10px auto;
+}
+
+#cartListTable a {
+  position: relative;
+  background-color: #FF5722;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #FF5722;
+}
+
+
+#amount h1{
+  color: black;
+  margin: 10px;
+}
+
+/* Orders */
+.ordersItems {
+  width: 70%;
+  display: inline-block;
+  background: #D7CCC8;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.22), 0 24px 24px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#ordersListTable {
+  margin: 10px auto;
+}
+#ordersListTable tr {
+  margin: 10px;
+}
+
+.orderButton {
+  position: relative;
+  background-color: #FF5722;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #FF5722;
+}
+
+.detailOrderButton {
+  position: relative;
+  background-color: green;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid green;
+}
+
+/* Create order */
+#createOrder {
+  background-color: #FF5722;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #FF5722;
+}
+
+/* Create payment */
+#ordersCreate .inputLabel {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#orderAmount {
+ color: #FF5722; 
+}
+
+/* Account create */
+#accountCreate .inputLabel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Spinner on the payment page */
+
+.lds-roller {
+  display: none;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

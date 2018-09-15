@@ -1,0 +1,15 @@
+<div class="loginLayout">
+  <div class="formLogin">
+    <h1>{head.title}</h1>
+      <form id="sessionCreate" action="/api/tokens" method="POST">
+        <div class="formError"></div>
+        <div class="inputLabel">Type your email</div>
+        <input class="inputWrapper" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+        <div class="inputLabel">Type your password to account</div>
+        <input class="inputWrapper" type="password" name="password" placeholder="Password" required />
+        <div class="buttonLogin">
+          <button class="buttonWrapper" type="submit">Login</button>
+        </div>
+      </form>
+  </div>
+</div>

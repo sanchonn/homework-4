@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+  <meta charset="utf-8">
+  <!-- <base href="/"> -->
+  <base href={global.baseUrl} />
+
+  <title>{head.title} | {global.appName}</title>
+  <meta name="description" content={head.description}>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Template Basic Images Start -->
+  <!--<meta property="og:image" content="path/to/image.jpg">-->
+  <link rel="icon" href="public/img/favicon/favicon.ico">
+  <!--<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">-->
+  <!-- Template Basic Images End -->
+
+  <!-- Custom Browsers Color Start -->
+  <meta name="theme-color" content="#000">
+  <!-- Custom Browsers Color End -->
+
+  <link rel="stylesheet" href="public/app.css">
+
+</head>
+
+<body class="{body.class}">
+	<!-- Logo -->
+	<div class="logo">
+		<img src="../public/img/logo.png" alt="">
+	</div>
+	<!-- End Logo-->
+
+	<!-- TopMenu -->
+	<div class="navBar">
+		<nav class="topMenu">
+			<ul>
+				<li class="loggedOut active"><a href="#">HOME</a></li>
+				<li class="loggedOut"><a href="account/create">SIGNUP</a></li>
+        <li class="loggedOut"><a href="session/create">LOGIN</a></li>
+        <li class="loggedIn"><a href="menu/all">MENU</a></li>
+				<li class="loggedIn"><a href="orders/all">ORDERS</a></li>
+				<li class="loggedIn"><a href="orders/cart" class="cart">CART</a></li>
+				<li class="loggedIn"><a href="account/edit">ACCOUNT</a></li>
+				<li class="loggedIn"><a href="session/deleted" id="logoutButton">LOGOUT</a></li>
+			</ul>
+		</nav>
+	</div>
+	<!-- End TopMenu-->

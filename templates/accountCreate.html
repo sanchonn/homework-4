@@ -1,0 +1,22 @@
+<div class="loginLayout">
+  <div class="formLogin">
+    <h1>{head.title}</h1>
+      <form id="accountCreate" action="/api/users" method="POST">
+        <div class="formError"></div>
+        <div class="inputLabel">Type your name</div>
+        <input class="inputWrapper" type="text" name="name" placeholder="Name" required/>
+        <div class="inputLabel">Type your email</div>
+        <input class="inputWrapper" type="email" name="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required/>
+        <div class="inputLabel">Type your address to delivery service</div>
+        <input class="inputWrapper" type="text" name="address" placeholder="Address" required/>
+        <div class="inputLabel">Type your password to account</div>
+        <input class="inputWrapper" type="password" name="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.passwordRepeat.pattern = this.value;" placeholder="Password" required />
+        <div class="inputLabel">Repeat your password to account</div>
+        <input class="inputWrapper" type="password" name="passwordRepeat" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required />
+        <div class="buttonLogin">
+          <button class="buttonWrapper" type="submit">Create</button>
+          <a href="/" class="buttonWrapper">Cancel</a>
+        </div>
+      </form>
+  </div>
+</div>
